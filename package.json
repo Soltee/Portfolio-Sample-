@@ -1,0 +1,17 @@
+{
+  "name": "Porfolio-Sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "Prabin",
+  "license": "ISC",
+  "homepage": "https://Soltee.github.io/Porfolio-Sample"
+}

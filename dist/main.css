@@ -1,0 +1,308 @@
+body {
+  margin:0;
+  padding:0;
+}
+
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+img{
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.ab-form{
+	position: absolute;
+  	top: 0;
+  	left: 0;
+  	margin: auto;
+  	width: 100%;
+  	z-index: 3;
+  	background-color: transparent;
+  	height: 20vh;
+  	align-items: center;
+  	margin-top: -100%;
+  	transition: margin-top 0.3s ease-in-out;
+}
+
+#search-form{
+	z-index: 2;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+
+.fa-arrow-left{
+	font-size: 2rem;
+	color: #fff;
+	transform: translateX(-100%);
+	cursor: pointer;
+}
+
+.search-input{
+	flex-grow: 1;
+	display: block;
+	background-color: transparent;
+	padding: 10px;
+	color:#fff;
+	max-width: 70%;
+	margin: auto;
+	border:0px;
+	border-bottom: 1px solid whitesmoke;
+	box-sizing: border-box;
+}
+
+.is-open{
+	margin-top: 60px;
+}
+
+
+
+
+/*Content*/
+#wrapper {
+	
+	box-sizing: border-box;
+	color: #fff;
+
+}
+
+.app-top{
+	height: 100vh;
+	background-color: #2a0854;
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+
+}
+.app-header{
+	/*display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+*/
+}
+.fa-bars, .fa-times{
+	font-size: 1.8rem;
+	opacity: 1;
+	cursor: pointer;
+	display: none;
+}
+.fa-times{
+	text-align: center;	
+	width: 100%;
+}
+.app-logo{
+	padding: 10px 0px;
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+
+.fa-user-circle{
+	font-size: 3rem;
+	color: #fff;
+	text-align: center;
+	width: 100%;
+}
+.app-nav{
+	margin: 0;
+	padding: 0;
+	flex-grow: 1;
+
+}
+
+.app-ul{
+	margin: 0;
+	padding: 0;
+}
+
+.app-list{
+	display: flex;
+	flex-direction: column;
+	padding: 15px 15px;
+	background-color: #130024;
+	width: 100%;
+	box-sizing: border-box;
+	text-align: left;
+	cursor: pointer;
+}
+.app-list:hover{
+	background-color: #281737;
+}
+.app-link{
+	color: #fff;
+	text-transform:capitalize;
+}
+
+.app-body{
+	background: #321952;
+	padding: 20px 20px 20px 100px;
+	box-sizing: border-box;
+}
+
+.app-main{
+	display: flex;
+	flex-direction: column;
+}
+.main-top{
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	padding-top: 10px;
+}
+
+.fa-bars{
+	cursor: pointer;
+	transform: translateY(-20px);
+
+}
+.fa-search{
+	
+	font-size: 1.5rem;
+	cursor: pointer;
+	position: relative;
+}
+.fa-search::after{
+	content: "";
+	position: absolute;
+	width: 2px ;
+	height: 25px;
+	background-color: #fff;
+	top: 0;
+	left: -10px;
+}
+
+/*Projects*/
+.main-home{
+	display:flex;
+	align-items: center;
+	margin-top: 10px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.home-detail{
+}
+.svg-img{
+	height: inherit;
+	width: inherit;
+}
+.main-project, .main-home{
+	background: ;
+	padding: 20px 0;
+}
+
+.main-about{
+	height: 85vh;
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.author{
+	width: 180px;
+	height: 180px;
+	object-fit: cover;
+   	border-radius: 50%;
+}
+
+.about-info{
+	text-align: center;
+	height: 80vh;
+	padding:0px 20px;
+	flex-grow: 1;
+	transform: translateY(30%);
+	display: flex;
+	flex-direction: column;
+
+}
+.about-info-detail{
+    text-align: justify;
+	line-height: 1.4rem;
+}
+
+.about-message-btn{
+	cursor: pointer;
+	font-size: 1.2rem;
+	padding: 10px;
+	background-color: whitesmoke;
+	color: #10030F;
+	color:whitesmoke;
+	color: #5D0C54;
+	border: 1px solid transparent;
+	margin-right: auto;
+	text-align: left;
+	width: 200px;
+	-webkit-clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
+	clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
+}
+
+
+.projects{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(220px , 1fr));
+	grid-gap: 2rem;
+}
+
+.project{
+	background: #130024;
+	height: 200px;
+	width: inherit;
+}
+.project:hover{
+	background-color: #281737;
+	cursor:pointer; 
+}
+
+/*Contact*/
+.main-contact{
+	width: inherit;
+	position: relative;
+}
+.main-contact::after{
+	content: "";
+	position: absolute;
+}
+.contact-title , .contact-info{
+	padding: 10px;
+}
+.contact-title{
+	border-bottom:  1px solid #fff;
+}
+
+#contact-form{
+}
+
+.form-group{
+	display:block;
+	padding: 10px;
+}
+
+#name, #email, #content{
+	padding: 8px;
+	width: 50%;
+	border: 1px solid transparent;
+	margin-bottom: 10px;
+	background-color: #d7d4da;
+	color: #321952;
+
+}
+#send{
+	background-color: #cac1d4;
+	cursor: pointer;
+	font-size: 1.2rem;
+	text-align: center;
+	margin: auto;
+	padding: 10px;
+	align-items: center;
+	width: 100px;
+	border: 1px solid transparent;
+}

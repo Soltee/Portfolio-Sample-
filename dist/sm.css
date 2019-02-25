@@ -1,0 +1,87 @@
+@media screen and (max-width: 820px)
+{
+
+	.fa-bars, .fa-times {
+		padding-top: 20px;
+		width: 100%;
+		display: block;
+	}
+	
+	.app-top{
+		z-index: 4;
+		height: 60px;
+		visibility:hidden; 
+		opacity: 0;
+	}
+	.is-open-app {
+		height: 100vh;
+		visibility:initial; 
+		opacity: 1;
+	}
+	.search-input{
+		width: 50%;
+	}
+	.fa-search::after{
+		content: "";
+		position: absolute;
+		width: 2px ;
+		height: 25px;
+		background-color: #fff;
+		top: 0;
+		left: -20px;
+	}
+	
+	
+
+	.app-body{
+		padding: 10px;
+	}
+	.fa-search::after{
+		content: "";
+		position: absolute;
+		width: 2px ;
+		height: 25px;
+		background-color: #fff;
+		top: 0;
+		left: -20px;
+	}
+
+	.main-home{
+	   display: flex;
+	}
+	.home-detail{
+		transform: translateY(0%);
+	}
+	.main-project{
+	   box-sizing: border-box;
+	}
+
+	.main-about{
+		display: flex;
+		flex-direction: column;
+	}
+	.author{
+		height: 200px;
+		width: 150px;
+		border-radius: 50%;
+	}
+	.about-info{
+			padding: 10px;
+			transform: translateY(0%);
+
+	}
+	.main-contact{
+		padding: 0;
+		margin: 0;
+	}
+	#name, #email, #content{
+		width: 90%;
+	}
+
+
+}
+
+@media(max-width: 580px)
+{
+
+}
